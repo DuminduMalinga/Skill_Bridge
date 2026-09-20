@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>SkillBridge - Institute Dashboard</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F46E5'/%3E%3Cpath d='M9 20c0-4.42 3.58-8 8-8 2.5 0 4.5 1.5 5.5 3.5' stroke='%23fff' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M20 20c0-3.31-2.69-6-6-6-1.1 0-2.13.3-3 .82' stroke='%23fff' stroke-width='2.5' fill='none' stroke-linecap='round' opacity='.65'/%3E%3C/svg%3E"/><meta name="description" content="Monitor posted courses, enrollments, and program engagement from your SkillBridge institute dashboard."/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0f0069","on-tertiary":"#ffffff","inverse-primary":"#c3c0ff","surface-tint":"#4d44e3","surface-dim":"#dadada","outline-variant":"#c7c4d8","surface-bright":"#f9f9f9","secondary":"#5a5e69","on-primary":"#ffffff","tertiary-fixed-dim":"#4edea3","primary":"#3525cd","on-secondary-container":"#60646f","surface-container-low":"#f3f3f3","on-tertiary-fixed-variant":"#005236","primary-container":"#4f46e5","on-error":"#ffffff","secondary-fixed-dim":"#c2c6d3","on-surface-variant":"#464555","primary-fixed-dim":"#c3c0ff","surface-container":"#eeeeee","surface-container-highest":"#e2e2e2","secondary-container":"#dee2ef","error":"#ba1a1a","surface-container-lowest":"#ffffff","inverse-on-surface":"#f0f1f1","on-surface":"#1a1c1c","tertiary-container":"#006e4b","on-primary-container":"#dad7ff","secondary-fixed":"#dee2ef","on-secondary-fixed":"#171c25","surface-variant":"#e2e2e2","on-secondary-fixed-variant":"#424751","surface-container-high":"#e8e8e8","inverse-surface":"#2f3131","surface":"#f9f9f9","background":"#f9f9f9","on-secondary":"#ffffff","tertiary-fixed":"#6ffbbe","on-background":"#1a1c1c","error-container":"#ffdad6","on-error-container":"#93000a","on-primary-fixed-variant":"#3323cc","outline":"#777587","tertiary":"#005338","primary-fixed":"#e2dfff","on-tertiary-fixed":"#002113","on-tertiary-container":"#67f4b7"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","margin":"2rem","space-xs":"0.25rem","gutter":"1.5rem","gutter-sm":"1rem","space-md":"1rem","space-sm":"0.5rem","margin-sm":"1rem","space-lg":"1.5rem"},"fontFamily":{"body-sm":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"caption":["Inter"],"headline-sm":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"caption":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display-hero":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 flex items-center gap-3 px-6"><img alt="SkillBridge brand logo featuring two minimalist interconnected geometric bridge arch nodes forming an infinity or linking bridge in deep indigo (#4F46E5) with clean geometric typography.. Brand logo. - Primary color: #4f46e5
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V5rM_dtcWnlE8HaAN7eXi0PejiuC50-cFY30ckgoRdke4DrEzb3gqcqcDA9w7-ZYqajI6T2fN3Dcj0AVBsUSOBs62FyBgRlR3IpGeJHrSbgepRk1NhTR-EGkQ9f1h9yJEWrPn1K0uqIU1lAwE3sAgJzzIbA2-_W2QT_WcGNyl5TSBQ2klCwJIwky8LHtS-Ho4i1Bj04lYWNGtc45Rwm7kwZy6rday0VEUe13n9--5vZ3v-F6S52ceIgsZ8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">SkillBridge</span><span class="font-caption text-caption text-on-surface-variant font-medium tracking-wide uppercase mt-0.5">Institute Portal</span></div></div><div class="px-4 py-2"><span class="px-3 font-caption text-caption text-secondary uppercase font-semibold tracking-wider">Workspace</span></div><nav class="flex flex-col gap-1 px-3" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md shadow-sm rounded-lg"><a aria-current="page" class="flex items-center gap-3 px-3 py-2.5 transition-colors bg-primary-container text-on-primary font-label-md text-label-md shadow-sm rounded-lg" data-path="dashboard" href="institute-dashboard.html"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="my-courses" href="institute-dashboard.html"><span class="material-symbols-outlined text-[20px]">library_books</span><span class="font-label-md text-label-md">My Courses</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="enrollments" href="institute-dashboard.html"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-md text-label-md">Enrollments</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="institute-profile" href="institute-profile-setup.html"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-label-md text-label-md">Institute Profile</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Settings</span></a></nav></div><div class="p-4 m-3 bg-surface-container-low rounded-xl flex items-center justify-between"><div class="flex items-center gap-3 min-w-0"><div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold flex-shrink-0">RI</div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Riverside Institute</span><span class="font-caption text-caption text-on-surface-variant truncate">Verified Partner</span></div></div><span class="material-symbols-outlined text-secondary text-[18px]">verified</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-3 w-full max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low text-on-surface placeholder:text-secondary font-body-sm text-body-sm rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search courses, enrollments, programs..." type="text"/></div></div><div class="flex items-center gap-4"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-3"><div class="text-right hidden sm:flex sm:flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Dr. Priya Anand</span><span class="font-caption text-caption text-secondary">Head of Partnerships</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-8 py-8"><div class="flex flex-col w-full">
+<!-- Top Greeting Header & Primary Action Row -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pb-8">
+<div class="flex flex-col gap-1.5 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary mr-1.5 animate-pulse"></span>
+          Publishing Active
+        </span>
+<span class="font-caption text-caption text-secondary">Cohort 2024–2025</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+        Welcome back, <span class="text-primary font-bold">Riverside Institute</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Here's an overview of your posted courses, student enrollment, and engagement across the SkillBridge marketplace.
+      </p>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Filter Courses</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5" onclick="window.location.href='post-course.html'">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Post a new course</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics 3-Column Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+<!-- Card 1: Active Courses -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between relative overflow-hidden transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-caption text-caption uppercase tracking-wider text-secondary font-semibold">Active Courses</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-hero text-display-hero text-on-surface leading-none">5</span>
+<span class="font-caption text-caption text-tertiary bg-tertiary-fixed/60 px-2 py-0.5 rounded-md font-medium">+1 new</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">library_books</span>
+</div>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-medium text-on-surface">3 Online</span>
+<span class="text-secondary">•</span>
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="font-medium text-on-surface">2 Hybrid</span>
+</div>
+<span class="text-secondary">1 pending review</span>
+</div>
+</div>
+<!-- Card 2: Total Enrollments -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between relative overflow-hidden transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-caption text-caption uppercase tracking-wider text-secondary font-semibold">Total Enrollments</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-hero text-display-hero text-on-surface leading-none">318</span>
+<span class="font-caption text-caption text-tertiary bg-tertiary-fixed/60 px-2 py-0.5 rounded-md font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">trending_up</span> 22 this wk
+            </span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">group</span>
+</div>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] mr-1">workspace_premium</span> 41 Certified
+          </span>
+<span class="font-caption text-caption text-secondary">this term</span>
+</div>
+<!-- Micro sparkline -->
+<svg class="w-16 h-5 text-tertiary" fill="none" viewbox="0 0 64 20">
+<path d="M2 17L14 14L28 16L40 7L52 10L62 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 3: Students Reached -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between relative overflow-hidden transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-caption text-caption uppercase tracking-wider text-secondary font-semibold">Students Reached</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-hero text-display-hero text-on-surface leading-none">612</span>
+<span class="font-caption text-caption text-on-secondary-container bg-secondary-fixed px-2 py-0.5 rounded-md font-medium">9 Campuses</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between font-caption text-caption">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-tertiary">4.8 / 5</span>
+<span class="text-on-surface-variant">average course rating</span>
+</div>
+<div class="w-20 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-1.5 rounded-full" style="width: 96%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Section: Posted Courses Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col overflow-hidden">
+<!-- Table Header Toolbar -->
+<div class="p-6 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Posted Courses</h2>
+<p class="font-caption text-caption text-secondary">Manage your published programs and review student enrollment.</p>
+</div>
+<!-- Filter Tabs & Quick Search -->
+<div class="flex items-center gap-3">
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg" id="statusFilterTabs">
+<button class="filter-tab px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all" data-filter="all">
+            All (5)
+          </button>
+<button class="filter-tab px-3 py-1.5 rounded-md font-label-sm text-label-sm text-secondary hover:text-on-surface transition-all" data-filter="open">
+            Live (4)
+          </button>
+<button class="filter-tab px-3 py-1.5 rounded-md font-label-sm text-label-sm text-secondary hover:text-on-surface transition-all" data-filter="closed">
+            Draft (1)
+          </button>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-secondary text-[18px]">search</span>
+<input class="pl-8 pr-3 py-1.5 text-body-sm font-body-sm bg-surface-container-low rounded-lg text-on-surface placeholder:text-secondary focus:outline-none focus:ring-1 focus:ring-primary w-44 transition-all focus:w-56" id="postingsSearch" placeholder="Search courses..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-6 font-semibold">Course Details</th>
+<th class="py-3 px-4 font-semibold">Level</th>
+<th class="py-3 px-4 font-semibold">Enrolled Students</th>
+<th class="py-3 px-4 font-semibold">Status</th>
+<th class="py-3 px-6 text-right font-semibold">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-sm font-body-sm text-on-surface" id="postingsTableBody">
+<!-- Row 1 -->
+<tr class="posting-row hover:bg-surface-bright transition-colors group" data-status="open">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary font-semibold shrink-0">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">
+                    Full-Stack Web Development Bootcamp
+                  </span>
+<span class="font-caption text-caption text-secondary truncate mt-0.5">
+                    Online • <span class="font-medium text-on-surface-variant">JavaScript, React, Node.js</span>
+</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-medium">
+                Beginner
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-medium text-on-surface">86 students</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-[11px] font-semibold">
+                    Industry Cert
+                  </span>
+</div>
+<div class="flex items-center -space-x-1.5">
+<div class="w-5 h-5 rounded-full bg-primary-container text-on-primary text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">AL</div>
+<div class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">RM</div>
+<div class="w-5 h-5 rounded-full bg-tertiary text-on-tertiary text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">SK</div>
+<span class="pl-2 font-caption text-caption text-secondary">+83</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Live
+              </span>
+</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-on-primary-fixed font-semibold px-3 py-1 rounded-lg hover:bg-surface-container transition-colors" onclick="window.location.href='institute-dashboard.html'">
+<span>View enrollments</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="p-1 text-secondary hover:text-on-surface rounded hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="posting-row hover:bg-surface-bright transition-colors group" data-status="open">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-tint/10 flex items-center justify-center text-primary font-semibold shrink-0">
+<span class="material-symbols-outlined text-[20px]">query_stats</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">
+                    Applied Data Science &amp; Machine Learning
+                  </span>
+<span class="font-caption text-caption text-secondary truncate mt-0.5">
+                    Hybrid • <span class="font-medium text-on-surface-variant">Python, Pandas, scikit-learn</span>
+</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">
+                Intermediate
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-medium text-on-surface">64 students</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-[11px] font-semibold">
+                    Fully Funded
+                  </span>
+</div>
+<div class="flex items-center -space-x-1.5">
+<div class="w-5 h-5 rounded-full bg-primary text-on-primary text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">EK</div>
+<div class="w-5 h-5 rounded-full bg-secondary text-on-secondary text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">DT</div>
+<div class="w-5 h-5 rounded-full bg-primary-fixed text-primary text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">JN</div>
+<span class="pl-2 font-caption text-caption text-secondary">+61</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Live
+              </span>
+</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-on-primary-fixed font-semibold px-3 py-1 rounded-lg hover:bg-surface-container transition-colors" onclick="window.location.href='institute-dashboard.html'">
+<span>View enrollments</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="p-1 text-secondary hover:text-on-surface rounded hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="posting-row hover:bg-surface-bright transition-colors group" data-status="open">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary font-semibold shrink-0">
+<span class="material-symbols-outlined text-[20px]">design_services</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">
+                    UX/UI Design Foundations
+                  </span>
+<span class="font-caption text-caption text-secondary truncate mt-0.5">
+                    Online • <span class="font-medium text-on-surface-variant">Figma, Design Systems, Prototyping</span>
+</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-medium">
+                Beginner
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-medium text-on-surface">102 students</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-[11px] font-semibold">
+                    Industry Cert
+                  </span>
+</div>
+<div class="flex items-center -space-x-1.5">
+<div class="w-5 h-5 rounded-full bg-primary-fixed text-primary text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">LC</div>
+<div class="w-5 h-5 rounded-full bg-surface-tint text-on-primary text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">PR</div>
+<span class="pl-2 font-caption text-caption text-secondary">+100</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Live
+              </span>
+</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-on-primary-fixed font-semibold px-3 py-1 rounded-lg hover:bg-surface-container transition-colors" onclick="window.location.href='institute-dashboard.html'">
+<span>View enrollments</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="p-1 text-secondary hover:text-on-surface rounded hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="posting-row hover:bg-surface-bright transition-colors group" data-status="open">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary font-semibold shrink-0">
+<span class="material-symbols-outlined text-[20px]">business_center</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">
+                    Digital Marketing &amp; Growth Strategy
+                  </span>
+<span class="font-caption text-caption text-secondary truncate mt-0.5">
+                    Hybrid • <span class="font-medium text-on-surface-variant">SEO, Analytics, Paid Media</span>
+</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-tertiary-container/10 text-tertiary-container font-label-sm text-label-sm font-medium">
+                Intermediate
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-medium text-on-surface">47 students</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-[11px] font-semibold">
+                    Paid
+                  </span>
+</div>
+<div class="flex items-center -space-x-1.5">
+<div class="w-5 h-5 rounded-full bg-on-surface-variant text-surface text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">MK</div>
+<div class="w-5 h-5 rounded-full bg-primary text-on-primary text-[9px] flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">TS</div>
+<span class="pl-2 font-caption text-caption text-secondary">+45</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Live
+              </span>
+</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-on-primary-fixed font-semibold px-3 py-1 rounded-lg hover:bg-surface-container transition-colors" onclick="window.location.href='institute-dashboard.html'">
+<span>View enrollments</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="p-1 text-secondary hover:text-on-surface rounded hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="posting-row hover:bg-surface-bright transition-colors group opacity-80" data-status="closed">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary font-semibold shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">
+                    Cloud Security &amp; Compliance Fundamentals
+                  </span>
+<span class="font-caption text-caption text-secondary truncate mt-0.5">
+                    Online • <span class="font-medium text-on-surface-variant">AWS, IAM, Compliance Frameworks</span>
+</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">
+                Advanced
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-body-sm text-body-sm text-secondary">0 students (Draft / Launching)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Draft
+              </span>
+</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-on-surface font-semibold px-3 py-1 rounded-lg hover:bg-surface-container transition-colors" onclick="window.location.href='institute-dashboard.html'">
+<span>View enrollments</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="p-1 text-secondary hover:text-on-surface rounded hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination Controls -->
+<div class="px-6 py-4 bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-4">
+<span class="font-caption text-caption text-secondary">
+        Showing <span class="font-medium text-on-surface" id="visibleCount">1-5</span> of 5 courses
+      </span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-secondary/50 font-label-sm text-label-sm cursor-not-allowed" disabled="">
+          Previous
+        </button>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded-md bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-semibold">
+            1
+          </button>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-secondary/50 font-label-sm text-label-sm cursor-not-allowed" disabled="">
+          Next
+        </button>
+</div>
+</div>
+</div>
+<!-- Micro-Interactions Script -->
+<script>
+    (function() {
+      const tabs = document.querySelectorAll('#statusFilterTabs .filter-tab');
+      const rows = document.querySelectorAll('#postingsTableBody .posting-row');
+      const searchInput = document.getElementById('postingsSearch');
+      const visibleCount = document.getElementById('visibleCount');
+
+      let currentFilter = 'all';
+      let searchQuery = '';
+
+      function applyFilters() {
+        let count = 0;
+        rows.forEach(row => {
+          const status = row.getAttribute('data-status');
+          const title = row.innerText.toLowerCase();
+
+          const matchesStatus = (currentFilter === 'all') || (status === currentFilter);
+          const matchesSearch = !searchQuery || title.includes(searchQuery);
+
+          if (matchesStatus && matchesSearch) {
+            row.classList.remove('hidden');
+            count++;
+          } else {
+            row.classList.add('hidden');
+          }
+        });
+        if (visibleCount) {
+          visibleCount.innerText = count > 0 ? `1-${count}` : '0';
+        }
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+            t.classList.add('text-secondary');
+          });
+          tab.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          tab.classList.remove('text-secondary');
+
+          currentFilter = tab.getAttribute('data-filter');
+          applyFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value.toLowerCase().trim();
+          applyFilters();
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>
