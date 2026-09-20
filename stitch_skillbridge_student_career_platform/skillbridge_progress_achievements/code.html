@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#dad7ff","outline-variant":"#c7c4d8","tertiary-fixed":"#6ffbbe","secondary-fixed":"#dee2ef","secondary-container":"#dee2ef","on-secondary-fixed":"#171c25","on-secondary-container":"#60646f","primary-fixed":"#e2dfff","on-primary-fixed":"#0f0069","on-primary":"#ffffff","on-background":"#1a1c1c","on-tertiary-container":"#67f4b7","error":"#ba1a1a","on-surface":"#1a1c1c","tertiary":"#005338","on-secondary":"#ffffff","on-surface-variant":"#464555","surface-variant":"#e2e2e2","surface-tint":"#4d44e3","primary-container":"#4f46e5","inverse-surface":"#2f3131","surface-bright":"#f9f9f9","background":"#f9f9f9","surface":"#f9f9f9","surface-container-high":"#e8e8e8","surface-container-highest":"#e2e2e2","tertiary-fixed-dim":"#4edea3","surface-dim":"#dadada","surface-container-low":"#f3f3f3","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#424751","on-primary-fixed-variant":"#3323cc","outline":"#777587","tertiary-container":"#006e4b","on-tertiary":"#ffffff","inverse-on-surface":"#f0f1f1","error-container":"#ffdad6","primary":"#3525cd","inverse-primary":"#c3c0ff","on-tertiary-fixed-variant":"#005236","secondary-fixed-dim":"#c2c6d3","secondary":"#5a5e69","on-error-container":"#93000a","primary-fixed-dim":"#c3c0ff","on-error":"#ffffff","on-tertiary-fixed":"#002113","surface-container":"#eeeeee"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{gutter:"1.5rem",margin:"2rem","margin-sm":"1rem","space-xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","gutter-sm":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},fontFamily:{"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],caption:["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"700"}],caption:["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-hero":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm"><img alt="SkillBridge brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V5rM_dtcWnlE8HaAN7eXi0PejiuC50-cFY30ckgoRdke4DrEzb3gqcqcDA9w7-ZYqajI6T2fN3Dcj0AVBsUSOBs62FyBgRlR3IpGeJHrSbgepRk1NhTR-EGkQ9f1h9yJEWrPn1K0uqIU1lAwE3sAgJzzIbA2-_W2QT_WcGNyl5TSBQ2klCwJIwky8LHtS-Ho4i1Bj04lYWNGtc45Rwm7kwZy6rday0VEUe13n9--5vZ3v-F6S52ceIgsZ8"/><span class="font-headline-sm text-headline-sm text-on-surface">SkillBridge</span></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded-xl shadow-[0_1px_3px_0_rgba(0,0,0,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="dashboard" href="#"><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="skill-gap" href="#"><span>Skill Gap</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="courses" href="#"><span>Courses</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="projects" href="#"><span>Projects</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="progress" href="#"><span>Progress</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="achievements" href="#"><span>Achievements</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl bg-primary-container text-on-primary shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] font-label-md text-label-md" data-path="profile" href="#"><span>Profile</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="settings" href="#"><span>Settings</span></a></nav></div><div class="p-space-md m-space-md rounded-xl bg-surface-container-low shadow-[0_1px_3px_0_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">Degree Progress</span><span class="font-label-sm text-label-sm text-primary font-semibold">Year 3 CS</span></div><div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden"><div class="bg-primary-container h-full rounded-full w-[72%]"></div></div><p class="mt-space-xs font-caption text-caption text-on-surface-variant">Ready for Industry Assessment</p></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center w-96 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[20px] text-on-surface-variant">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all" placeholder="Search projects, companies, tech stacks..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X4U_DaYnl2TTfmwLoWpCsD3lhiWKuRWG_Qwl4-z0xrgNCTB8mqISZNCawnkUfhGBlNOsMhLKcr58OrfqzTk7w41HMtgJbUg28gZ88pGtezLtFRnfDIFFKMNZpFw-zEuWIeTcFHNh-K7cW_gFqUDjc0_zrRYw2qp652jp8JizfcqnSRwONE9mmliVb61CWUYGGKFP45Fvsb9Ip9YJE21bftNMoxNHSpSanlIJzUc_hwX57tlRWgOHHb5074"/><span class="hidden sm:inline font-label-md text-label-md text-on-surface font-semibold">Maya Lin</span></div></div></header><main class="relative pt-16 w-full px-8 bg-surface min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Header & Breadcrumb Meta -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-caption text-caption mb-1">
+<span class="hover:text-primary transition-colors cursor-pointer">Dashboard</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-medium">Progress &amp; Achievements</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Progress &amp; Achievements</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">
+        Track your trajectory toward industry benchmark readiness, milestone tokens, and verified engineering credentials.
+      </p>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+<!-- Target Readiness Pill -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-3.5 py-2 rounded-xl shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03]">
+<div class="flex flex-col">
+<span class="font-caption text-[11px] text-on-surface-variant leading-none">Target: Junior Frontend &amp; Systems</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-md text-label-md text-primary font-semibold">Current: 68%</span>
+<span class="text-outline-variant font-caption text-caption">•</span>
+<span class="font-caption text-caption text-tertiary-container font-medium flex items-center">
+<span class="material-symbols-outlined text-[14px] mr-0.5">trending_up</span>+24% in 90d
+            </span>
+</div>
+</div>
+</div>
+<!-- Time Range Pills -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl shadow-[0_1px_2px_0_rgba(0,0,0,0.02)]">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_2px_0_rgba(0,0,0,0.05)] transition-all">Last 6 Months</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Last Quarter</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">All Time</button>
+</div>
+</div>
+</div>
+<!-- Hero Line Chart: Industry Readiness Score Over Time -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-6 pb-4 border-b border-surface-container">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Industry Readiness Score Over Time</h2>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-tertiary font-label-sm text-[11px] font-semibold">Top 25% UCL Cohort</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Your score evaluated against peer cohorts and UK Tier-1 tech company recruitment thresholds</p>
+</div>
+<!-- Chart Legend -->
+<div class="flex flex-wrap items-center gap-4 text-caption font-caption">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container ring-2 ring-primary-fixed"></span>
+<span class="text-on-surface font-medium">Maya Lin (68%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-0.5 bg-tertiary-container rounded"></span>
+<span class="text-on-surface-variant">Tier-1 Threshold (75%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-0.5 bg-outline-variant stroke-dasharray-2 rounded"></span>
+<span class="text-on-surface-variant">UCL CS Median (56%)</span>
+</div>
+</div>
+</div>
+<!-- SVG Chart Canvas Area -->
+<div class="relative w-full overflow-x-auto">
+<div class="min-w-[760px] relative">
+<svg class="w-full h-72 overflow-visible select-none" preserveaspectratio="none" viewbox="0 0 920 320">
+<defs>
+<!-- Area Gradient Maya -->
+<lineargradient id="primaryAreaGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4f46e5" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#4f46e5" stop-opacity="0.0"></stop>
+</lineargradient>
+<!-- Projected Area Gradient -->
+<lineargradient id="projectedGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4f46e5" stop-opacity="0.08"></stop>
+<stop offset="100%" stop-color="#4f46e5" stop-opacity="0.0"></stop>
+</lineargradient>
+<filter height="140%" id="shadowPoint" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="2" flood-color="#4f46e5" flood-opacity="0.3" stddeviation="3"></fedropshadow>
+</filter>
+</defs>
+<!-- Horizontal Grid Lines & Y-Labels -->
+<g class="text-[11px] font-caption fill-outline">
+<!-- 80% -->
+<line stroke="#f3f3f3" stroke-width="1" x1="60" x2="880" y1="40" y2="40"></line>
+<text text-anchor="end" x="36" y="44">80%</text>
+<!-- 75% Tier-1 Threshold Line -->
+<line stroke="#006e4b" stroke-dasharray="4,4" stroke-opacity="0.4" stroke-width="1.5" x1="60" x2="880" y1="65" y2="65"></line>
+<text class="fill-tertiary-container font-semibold" text-anchor="end" x="36" y="69">75%</text>
+<!-- 60% -->
+<line stroke="#f3f3f3" stroke-width="1" x1="60" x2="880" y1="130" y2="130"></line>
+<text text-anchor="end" x="36" y="134">60%</text>
+<!-- 40% -->
+<line stroke="#f3f3f3" stroke-width="1" x1="60" x2="880" y1="210" y2="210"></line>
+<text text-anchor="end" x="36" y="214">40%</text>
+<!-- 20% -->
+<line stroke="#f3f3f3" stroke-width="1" x1="60" x2="880" y1="280" y2="280"></line>
+<text text-anchor="end" x="36" y="284">20%</text>
+</g>
+<!-- Vertical Month Gridlines & X-Labels -->
+<g class="text-[12px] font-caption fill-on-surface-variant font-medium">
+<text text-anchor="middle" x="80" y="306">May</text>
+<text text-anchor="middle" x="210" y="306">Jun</text>
+<text text-anchor="middle" x="340" y="306">Jul</text>
+<text text-anchor="middle" x="470" y="306">Aug</text>
+<text text-anchor="middle" x="600" y="306">Sep</text>
+<text class="fill-primary font-bold" text-anchor="middle" x="730" y="306">Oct (Current)</text>
+<text class="fill-outline" text-anchor="middle" x="850" y="306">Nov/Dec</text>
+</g>
+<!-- UCL Cohort Average Line: May(38) -> Jun(42) -> Jul(46) -> Aug(50) -> Sep(53) -> Oct(56) -->
+<path d="M 80,218 Q 210,202 340,186 T 600,158 T 730,146" fill="none" stroke="#c7c4d8" stroke-dasharray="3,3" stroke-width="2"></path>
+<!-- Target Benchmark Threshold Line (75% - Flat) -->
+<line stroke="#006e4b" stroke-dasharray="6,4" stroke-opacity="0.6" stroke-width="1.5" x1="80" x2="880" y1="65" y2="65"></line>
+<!-- Maya Filled Area to Oct -->
+<path d="M 80,194 C 145,178 145,174 210,174 C 275,174 275,158 340,158 C 405,158 405,138 470,138 C 535,138 535,122 600,122 C 665,122 665,98 730,98 L 730,280 L 80,280 Z" fill="url(#primaryAreaGrad)"></path>
+<!-- Projected Line & Area to Nov/Dec (80%) -->
+<path d="M 730,98 C 790,75 800,50 850,40 L 850,280 L 730,280 Z" fill="url(#projectedGrad)"></path>
+<path d="M 730,98 C 790,75 800,50 850,40" fill="none" stroke="#4f46e5" stroke-dasharray="5,5" stroke-opacity="0.7" stroke-width="2.5"></path>
+<!-- Maya Score Main Trendline -->
+<!-- Points: May(44% -> y=194), Jun(49% -> y=174), Jul(53% -> y=158), Aug(58% -> y=138), Sep(62% -> y=122), Oct(68% -> y=98) -->
+<path d="M 80,194 C 145,178 145,174 210,174 C 275,174 275,158 340,158 C 405,158 405,138 470,138 C 535,138 535,122 600,122 C 665,122 665,98 730,98" fill="none" stroke="#4f46e5" stroke-linecap="round" stroke-width="3"></path>
+<!-- Data Points -->
+<circle cx="80" cy="194" fill="#ffffff" r="4.5" stroke="#4f46e5" stroke-width="2.5"></circle>
+<circle cx="210" cy="174" fill="#ffffff" r="4.5" stroke="#4f46e5" stroke-width="2.5"></circle>
+<circle cx="340" cy="158" fill="#ffffff" r="4.5" stroke="#4f46e5" stroke-width="2.5"></circle>
+<circle cx="470" cy="138" fill="#ffffff" r="5.5" stroke="#4f46e5" stroke-width="3"></circle>
+<circle cx="600" cy="122" fill="#ffffff" r="5.5" stroke="#4f46e5" stroke-width="3"></circle>
+<circle cx="730" cy="98" fill="#4f46e5" filter="url(#shadowPoint)" r="7" stroke="#ffffff" stroke-width="3"></circle>
+<circle cx="850" cy="40" fill="#ffffff" r="4" stroke="#4f46e5" stroke-dasharray="2,2" stroke-width="2"></circle>
+<!-- Milestone Pins and Annotations -->
+<!-- Pin Aug: Closed Git CI/CD & Docker -->
+<g class="cursor-pointer">
+<line stroke="#4f46e5" stroke-dasharray="2,2" stroke-width="1.5" x1="470" x2="470" y1="138" y2="108"></line>
+<rect fill="#1e1b4b" height="22" rx="6" width="160" x="390" y="86"></rect>
+<text class="fill-white text-[10.5px] font-label-sm font-medium" text-anchor="middle" x="470" y="101">Closed Git CI/CD &amp; Docker</text>
+</g>
+<!-- Pin Sep: Monzo Project Accepted -->
+<g class="cursor-pointer">
+<line stroke="#4f46e5" stroke-dasharray="2,2" stroke-width="1.5" x1="600" x2="600" y1="122" y2="72"></line>
+<rect fill="#006e4b" height="22" rx="6" width="160" x="520" y="50"></rect>
+<text class="fill-white text-[10.5px] font-label-sm font-medium" text-anchor="middle" x="600" y="65">Monzo Project Accepted</text>
+</g>
+<!-- Pin Oct (Current): Current: Top 25% Quartile -->
+<g class="cursor-pointer">
+<line stroke="#4f46e5" stroke-width="1.5" x1="730" x2="730" y1="98" y2="40"></line>
+<rect fill="#4f46e5" height="22" rx="6" width="160" x="650" y="18"></rect>
+<text class="fill-white text-[11px] font-label-sm font-semibold" text-anchor="middle" x="730" y="33">Current: Top 25% (68%)</text>
+</g>
+<!-- Target Label on projected end -->
+<g>
+<rect fill="#f3f3f3" height="20" rx="5" width="140" x="760" y="50"></rect>
+<text class="fill-on-surface-variant text-[10px] font-caption font-medium" text-anchor="middle" x="830" y="64">Goal: Fast-Track (75%+)</text>
+</g>
+</svg>
+</div>
+</div>
+</div>
+<!-- Summary Stat Cards: Quarterly Snapshot (Q3/Q4) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-xl">
+<!-- Stat Card 1: Courses Completed -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Courses Completed</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> 100% On-Track
+          </span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">4</span>
+<span class="font-caption text-caption text-tertiary-container font-semibold">+2 this quarter</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-2">
+          Vercel Next.js 14, Advanced TypeScript, UCL HCI Lab, Compilers &amp; OS
+        </p>
+</div>
+<div class="mt-4 pt-3 border-t border-surface-container flex items-center justify-between font-caption text-caption text-on-surface-variant">
+<span>Verified Credential Points</span>
+<span class="text-on-surface font-semibold">120 / 120 ECTS</span>
+</div>
+</div>
+<!-- Stat Card 2: Projects Delivered -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-amber-50 flex items-center justify-center text-[#b45309]">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Projects Delivered</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-amber-50 text-[#b45309] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">stars</span> 1 Fast-Track Earned
+          </span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">3</span>
+<span class="font-caption text-caption text-on-surface-variant font-medium">1 In Progress • Figma Labs</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-2">
+          Monzo Webhook Dispatcher (Passed), Deliveroo Map, UCL Open PR
+        </p>
+</div>
+<div class="mt-4 pt-3 border-t border-surface-container flex items-center justify-between font-caption text-caption text-on-surface-variant">
+<span>Production Acceptance Rate</span>
+<span class="text-on-surface font-semibold">100% (Passed Review)</span>
+</div>
+</div>
+<!-- Stat Card 3: Skills Gained This Quarter -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Skills Gained (Q3/Q4)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold">
+            75% Verified
+          </span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">8 Skills</span>
+<span class="font-caption text-caption text-tertiary-container font-semibold">+3 Verified by Employers</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="px-2 py-0.5 bg-surface-container-low text-on-surface-variant font-caption text-[11px] rounded-full">Next.js 14</span>
+<span class="px-2 py-0.5 bg-surface-container-low text-on-surface-variant font-caption text-[11px] rounded-full">TypeScript Generics</span>
+<span class="px-2 py-0.5 bg-surface-container-low text-on-surface-variant font-caption text-[11px] rounded-full">Redis</span>
+<span class="px-2 py-0.5 bg-surface-container-low text-on-surface-variant font-caption text-[11px] rounded-full">Playwright E2E</span>
+<span class="px-2 py-0.5 bg-surface-container-low text-on-surface-variant font-caption text-[11px] rounded-full">Zustand</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-surface-container flex items-center justify-between font-caption text-caption text-on-surface-variant">
+<span>Verified by Monzo &amp; UCL</span>
+<span class="text-on-surface font-semibold">6 of 8 Validated</span>
+</div>
+</div>
+</div>
+<!-- Badges & Achievements Section -->
+<div class="flex flex-col w-full">
+<!-- Header Row with Filter Tabs -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">Milestone Badges &amp; Credentials</h2>
+<span class="text-outline-variant font-caption text-caption">•</span>
+<span class="font-caption text-caption text-on-surface-variant font-medium">12 of 20 Unlocked • 4 In Progress</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Tamper-evident cryptographically signed engineering tokens recognized by partner companies</p>
+</div>
+<!-- Badge Filter Tabs -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl shadow-[0_1px_2px_0_rgba(0,0,0,0.02)]">
+<button class="badge-tab-btn px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_2px_0_rgba(0,0,0,0.05)] transition-all" id="btn-all" onclick="filterBadges('all')">All Badges (20)</button>
+<button class="badge-tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" id="btn-earned" onclick="filterBadges('earned')">Earned (12)</button>
+<button class="badge-tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" id="btn-progress" onclick="filterBadges('progress')">In Progress (4)</button>
+<button class="badge-tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" id="btn-locked" onclick="filterBadges('locked')">Locked (4)</button>
+</div>
+</div>
+<!-- Achievements Grid (14 featured badges) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md" id="badgeGrid">
+<!-- 1. First Project Delivered [EARNED] -->
+<div class="badge-card bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="earned">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[26px]">workspace_premium</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Earned
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">First Project Delivered</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Completed first production industry brief with Monzo Bank webhook queue engine.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption">
+<span class="text-[#006e4b] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span> Monzo Verified
+          </span>
+<span class="text-outline">Oct 2025</span>
+</div>
+</div>
+<!-- 2. Skill Gap Closed: SQL & Relational Schema [EARNED] -->
+<div class="badge-card bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="earned">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[26px]">database</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Earned
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Skill Gap: SQL Schema</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Closed gap via UCL Database Systems and normalized Monzo ledger schema design.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption">
+<span class="text-[#006e4b] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">school</span> UCL Faculty
+          </span>
+<span class="text-outline">Sep 2025</span>
+</div>
+</div>
+<!-- 3. TypeScript Virtuoso [EARNED] -->
+<div class="badge-card bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="earned">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[26px]">security</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Earned
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">TypeScript Virtuoso</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Level 4 Certified Generics, conditional mapped types, and custom AST parser rules.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption">
+<span class="text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span> SkillBridge L4
+          </span>
+<span class="text-outline">Oct 2025</span>
+</div>
+</div>
+<!-- 4. Fast-Track Token Holder [EARNED] -->
+<div class="badge-card bg-gradient-to-b from-surface-container-lowest to-amber-500/[0.03] rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-amber-500/20 flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="earned">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 flex items-center justify-center text-white shadow-md ring-2 ring-amber-300">
+<span class="material-symbols-outlined text-[26px]">confirmation_number</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-amber-100 text-[#b45309] font-label-sm text-[11px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">stars</span> Fast-Track
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Fast-Track Token Holder</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Qualified for Monzo Engineering Round 1 bypass on summer 2026 associate cohort.</p>
+</div>
+<div class="pt-3 border-t border-amber-200/50 flex items-center justify-between text-caption font-caption">
+<span class="text-[#b45309] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">key</span> Token ID: #MNZ-882
+          </span>
+<span class="text-outline">Oct 2025</span>
+</div>
+</div>
+<!-- 5. Clean Commits & CI/CD [EARNED] -->
+<div class="badge-card bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="earned">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-800 flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[26px]">account_tree</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Earned
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Clean Commits &amp; CI/CD</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">40+ rebase clean commits verified on GitHub with lint and semantic release hooks.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption">
+<span class="text-[#006e4b] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span> Git Validator
+          </span>
+<span class="text-outline">Sep 2025</span>
+</div>
+</div>
+<!-- 6. E2E Testing Architect [EARNED] -->
+<div class="badge-card bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="earned">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-emerald-800 flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[26px]">science</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Earned
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">E2E Testing Architect</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Zero flaky tests across 60 Playwright assertions in dynamic chaos mock harness.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption">
+<span class="text-[#006e4b] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">fact_check</span> 100% Passed
+          </span>
+<span class="text-outline">Aug 2025</span>
+</div>
+</div>
+<!-- 7. Rapid Learner [EARNED] -->
+<div class="badge-card bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="earned">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose-500 to-red-600 flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[26px]">local_fire_department</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Earned
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Rapid Learner</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Completed 2 recommended bridge courses with high distinction in under 3 weeks.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption">
+<span class="text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">speed</span> 2.4x Velocity
+          </span>
+<span class="text-outline">Aug 2025</span>
+</div>
+</div>
+<!-- 8. Peer Review Contributor [EARNED] -->
+<div class="badge-card bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="earned">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[26px]">forum</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Earned
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Peer Review Contributor</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Reviewed 5 student code solutions in UCL Lab with architectural feedback.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption">
+<span class="text-[#006e4b] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">thumb_up</span> 5 Approved
+          </span>
+<span class="text-outline">Sep 2025</span>
+</div>
+</div>
+<!-- 9. Design System Tokenizer [IN PROGRESS - 75%] -->
+<div class="badge-card bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border-2 border-primary-container/30 flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="progress">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[26px]">token</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">sync</span> 75% Done
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Design System Tokenizer</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Figma Labs Token Sync: 3 of 4 milestones finished in Figma Labs design token sprint.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex flex-col gap-1.5">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[75%]"></div>
+</div>
+<div class="flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Next: DTCG export</span>
+<span class="text-primary font-semibold">1 Step Remaining</span>
+</div>
+</div>
+</div>
+<!-- 10. State Machine Master [IN PROGRESS - 50%] -->
+<div class="badge-card bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border-2 border-primary-container/30 flex flex-col justify-between hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 transition-all duration-200" data-status="progress">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[26px]">device_hub</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">sync</span> 50% Done
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">State Machine Master</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Wise FX Rate Cache: Zustand integration &amp; finite state transition checkpoint pending.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex flex-col gap-1.5">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[50%]"></div>
+</div>
+<div class="flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Next: FX Sync Hook</span>
+<span class="text-primary font-semibold">2 Steps Left</span>
+</div>
+</div>
+</div>
+<!-- 11. Full-Stack Deployer [LOCKED] -->
+<div class="badge-card bg-surface-container-lowest/60 rounded-xl p-space-md shadow-none border border-black/[0.03] opacity-60 hover:opacity-100 transition-opacity duration-200 flex flex-col justify-between" data-status="locked">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[26px]">cloud_upload</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">lock</span> Locked
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Full-Stack Deployer</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Deploy 3 production apps to Vercel/AWS with zero-downtime rolling CI/CD triggers.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption text-outline">
+<span>Requirement: 3/3 Apps</span>
+<span>1 of 3 Done</span>
+</div>
+</div>
+<!-- 12. Interview Exemption Trio [LOCKED] -->
+<div class="badge-card bg-surface-container-lowest/60 rounded-xl p-space-md shadow-none border border-black/[0.03] opacity-60 hover:opacity-100 transition-opacity duration-200 flex flex-col justify-between" data-status="locked">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[26px]">vpn_key</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">lock</span> Locked
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Interview Exemption Trio</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Earn 3 verified fast-track bypass tokens from tier-1 technology corporate partners.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption text-outline">
+<span>Requirement: 3 Tokens</span>
+<span>1 of 3 Held</span>
+</div>
+</div>
+<!-- 13. Open Source Maintainer [LOCKED] -->
+<div class="badge-card bg-surface-container-lowest/60 rounded-xl p-space-md shadow-none border border-black/[0.03] opacity-60 hover:opacity-100 transition-opacity duration-200 flex flex-col justify-between" data-status="locked">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[26px]">volunteer_activism</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">lock</span> Locked
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Open Source Maintainer</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Have an upstream Pull Request merged into an officially tracked partner framework repo.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption text-outline">
+<span>Requirement: 1 Merged PR</span>
+<span>In Review</span>
+</div>
+</div>
+<!-- 14. Zero-Downtime Resilience [LOCKED] -->
+<div class="badge-card bg-surface-container-lowest/60 rounded-xl p-space-md shadow-none border border-black/[0.03] opacity-60 hover:opacity-100 transition-opacity duration-200 flex flex-col justify-between" data-status="locked">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[26px]">shield_with_heart</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">lock</span> Locked
+            </span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-on-surface font-semibold mb-1">Zero-Downtime Resilience</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-3">Pass automated chaos fault injection suite with 99.99% availability during peak load test.</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-caption font-caption text-outline">
+<span>Requirement: 99.99% SLA</span>
+<span>Locked</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Verification & Export Credential Drawer -->
+<div class="mt-space-lg w-full bg-surface-container-lowest rounded-xl p-space-md shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] border border-black/[0.03] flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed/30 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Public Credential Profile Active</h4>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-[#047857] font-label-sm text-[11px] font-semibold">Live URL</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Employers at Monzo, Wise, and Deliveroo can verify your token signatures at skillbridge.io/p/maya-lin</p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">share</span> Share Profile
+      </button>
+<button class="px-3.5 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">download</span> Export PDF Dossier
+      </button>
+</div>
+</div>
+<!-- Client-side Interactive Filter Script -->
+<script>
+    function filterBadges(status) {
+      const cards = document.querySelectorAll('.badge-card');
+      const tabs = document.querySelectorAll('.badge-tab-btn');
+
+      // Update button styling
+      tabs.forEach(btn => {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]');
+        btn.classList.add('text-on-surface-variant');
+      });
+
+      const activeBtn = document.getElementById('btn-' + status);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]');
+        activeBtn.classList.remove('text-on-surface-variant');
+      }
+
+      // Filter cards
+      cards.forEach(card => {
+        const cardStatus = card.getAttribute('data-status');
+        if (status === 'all' || cardStatus === status) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</div></main></div></body></html>

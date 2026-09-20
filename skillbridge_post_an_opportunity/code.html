@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#005236","on-primary-container":"#dad7ff","tertiary-container":"#006e4b","inverse-primary":"#c3c0ff","surface-container":"#eeeeee","secondary-container":"#dee2ef","on-primary-fixed":"#0f0069","on-secondary-fixed-variant":"#424751","outline":"#777587","surface-container-high":"#e8e8e8","surface":"#f9f9f9","inverse-on-surface":"#f0f1f1","primary-fixed":"#e2dfff","outline-variant":"#c7c4d8","on-tertiary":"#ffffff","surface-tint":"#4d44e3","tertiary":"#005338","error":"#ba1a1a","surface-variant":"#e2e2e2","primary":"#3525cd","surface-dim":"#dadada","on-tertiary-container":"#67f4b7","on-secondary-container":"#60646f","tertiary-fixed-dim":"#4edea3","on-secondary-fixed":"#171c25","on-primary":"#ffffff","surface-bright":"#f9f9f9","on-surface-variant":"#464555","on-secondary":"#ffffff","on-background":"#1a1c1c","on-primary-fixed-variant":"#3323cc","secondary-fixed":"#dee2ef","primary-fixed-dim":"#c3c0ff","on-error-container":"#93000a","inverse-surface":"#2f3131","on-error":"#ffffff","primary-container":"#4f46e5","tertiary-fixed":"#6ffbbe","secondary-fixed-dim":"#c2c6d3","error-container":"#ffdad6","on-tertiary-fixed":"#002113","surface-container-low":"#f3f3f3","surface-container-lowest":"#ffffff","secondary":"#5a5e69","background":"#f9f9f9","on-surface":"#1a1c1c","surface-container-highest":"#e2e2e2"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","margin":"2rem","space-md":"1rem","gutter-sm":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-sm":"0.5rem","margin-sm":"1rem"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"caption":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"caption":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-hero":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6"><div class="flex flex-col"><div class="px-6 mb-8 flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm">S</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">SkillBridge</span><span class="font-caption text-caption text-on-surface-variant">Employer Hub</span></div></div><div class="px-6 mb-4"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Workspace Menu</span></div><nav class="flex flex-col px-4 gap-1" data-active-classes="bg-primary-container text-on-primary rounded-lg font-label-md"><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="post-opportunity" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>Post an Opportunity</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="my-postings" href="#"><span class="material-symbols-outlined text-[20px]">work_outline</span><span>My Postings</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="applicants" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Applicants</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="company-profile" href="#"><span class="material-symbols-outlined text-[20px]">domain</span><span>Company Profile</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="px-4"><div class="p-3.5 bg-surface-container-low rounded-xl flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container shadow-[0_1px_3px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[22px]">corporate_fare</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">NextTech Labs</span><span class="font-caption text-caption text-on-surface-variant truncate">Monzo Engineering</span></div><span class="material-symbols-outlined text-outline text-[18px]">unfold_more</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center w-96"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all" placeholder="Search postings, roles, applicants..." type="text"/></div></div><div class="flex items-center gap-5"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Sarah Jenkins</span><span class="font-caption text-caption text-on-surface-variant leading-tight">Talent Director</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-8 py-8"><div class="flex flex-col w-full">
+<!-- Top Navigation / Context Header -->
+<div class="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-8">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 font-caption text-caption text-secondary">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">work_outline</span>
+          Opportunities
+        </a>
+<span>/</span>
+<span class="text-on-surface font-label-md text-label-md">New Posting</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Post an Opportunity</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Create a verified role or industry project calibrated directly against university skill gap metrics and student talent profiles.
+      </p>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-3 self-start md:self-auto">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-low text-secondary hover:bg-surface-container hover:text-on-surface transition-all flex items-center gap-1.5 font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+        Preview Listing
+      </button>
+<button class="px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-fixed font-label-md text-label-md hover:bg-surface-container-high transition-all" type="button">
+        Save as draft
+      </button>
+<button class="px-5 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary transition-all flex items-center gap-1.5" id="headerPublishBtn" type="button">
+<span>Publish opportunity</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Form Builder (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- 1. Segmented Control: Opportunity Type -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Opportunity Architecture</h2>
+<p class="font-caption text-caption text-secondary">Calibrate alignment with academic terms and university micro-credentials</p>
+</div>
+<span class="px-2.5 py-1 bg-tertiary-container/10 text-tertiary font-label-sm text-label-sm rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Verified Framework
+          </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<!-- Internship Option -->
+<label class="relative flex flex-col p-4 rounded-xl cursor-pointer bg-surface-container-low/50 hover:bg-surface-container-low transition-all">
+<input class="sr-only peer" name="opp_type" type="radio" value="internship"/>
+<div class="flex items-center justify-between mb-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<span class="w-4 h-4 rounded-full bg-surface-container-highest peer-checked:bg-primary-container peer-checked:ring-4 peer-checked:ring-primary-fixed"></span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Internship</span>
+<span class="font-caption text-caption text-secondary mt-0.5">Formal 10-12 wk placement</span>
+</label>
+<!-- Full-time Role Option -->
+<label class="relative flex flex-col p-4 rounded-xl cursor-pointer bg-surface-container-low/50 hover:bg-surface-container-low transition-all">
+<input class="sr-only peer" name="opp_type" type="radio" value="fulltime"/>
+<div class="flex items-center justify-between mb-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<span class="w-4 h-4 rounded-full bg-surface-container-highest peer-checked:bg-primary-container peer-checked:ring-4 peer-checked:ring-primary-fixed"></span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Full-time Role</span>
+<span class="font-caption text-caption text-secondary mt-0.5">Graduate entry career sprint</span>
+</label>
+<!-- Project-based Work (Active Selected) -->
+<label class="relative flex flex-col p-4 rounded-xl cursor-pointer bg-primary-fixed/30 hover:bg-primary-fixed/40 transition-all shadow-sm">
+<input checked="" class="sr-only peer" name="opp_type" type="radio" value="project"/>
+<div class="flex items-center justify-between mb-2">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<span class="w-4 h-4 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-primary-fixed font-semibold">Project Sprint</span>
+<span class="px-1.5 py-0.5 bg-primary-container text-on-primary font-label-sm text-[10px] rounded-md">Popular</span>
+</div>
+<span class="font-caption text-caption text-on-primary-fixed-variant mt-0.5">Scoped deliverables, 4-8 weeks, stipend-eligible</span>
+</label>
+</div>
+</div>
+<!-- 2. Core Details -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Opportunity Core Details</h2>
+<span class="font-caption text-caption text-secondary">Step 1 of 3</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Opportunity Title <span class="text-error">*</span></span>
+<span class="font-caption text-caption text-secondary">Appears in marketplace headers</span>
+</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all placeholder:text-outline" id="oppTitleInput" placeholder="e.g. Distributed Systems Intern / Cloud Infrastructure Micro-Sprint" type="text" value="Event-Driven Webhook Dispatcher Sprint"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+              Host Department / Squad <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">hub</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all" id="oppDeptInput" type="text" value="Core Banking &amp; Ledger Infrastructure"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+              Primary Academic Calibration
+            </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">account_balance</span>
+<select class="w-full pl-10 pr-4 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all appearance-none cursor-pointer">
+<option selected="">Computer Science &amp; Software Engineering</option>
+<option>Data Engineering &amp; Distributed Systems</option>
+<option>Information Security &amp; Applied Cryptography</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+              Technical Scope &amp; Student Goals <span class="text-error">*</span>
+</label>
+<span class="font-caption text-caption text-secondary">Markdown supported • 220 chars</span>
+</div>
+<textarea class="w-full p-4 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all placeholder:text-outline resize-none" id="oppDescInput" rows="3">Build and benchmark a high-throughput, idempotent event dispatcher in Go and Redis. Students will implement retry mechanisms, HMAC signature verification, and automated test harnesses with mentor reviews.</textarea>
+</div>
+</div>
+<!-- 3. Required Skills (Taxonomy Picker) -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">SkillBridge Competency Mapping</h2>
+<p class="font-caption text-caption text-secondary">These tags directly calculate candidate readiness scores across connected universities</p>
+</div>
+<div class="flex items-center gap-1.5 bg-secondary-container/50 px-2.5 py-1 rounded-full text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span>Taxonomy v2.4</span>
+</div>
+</div>
+<!-- Search Input -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-secondary text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all" placeholder="Search and add skills from taxonomy (e.g. Go, Redis, Docker, TypeScript)..." type="text"/>
+<div class="absolute right-3 px-2 py-0.5 bg-surface-container rounded text-outline font-caption text-[11px]">↵ Enter to add</div>
+</div>
+<!-- Active Tags -->
+<div class="flex flex-wrap gap-2.5 pt-1">
+<!-- Skill Tag 1 -->
+<div class="flex items-center gap-2 pl-2.5 pr-2 py-1.5 rounded-full bg-tertiary-container/10 text-on-tertiary-fixed-variant shadow-sm transition-all hover:bg-tertiary-container/20">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+<span class="font-label-md text-label-md font-medium">Go (Mastery)</span>
+<button class="w-4 h-4 rounded-full flex items-center justify-center hover:bg-black/10 transition-colors ml-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Skill Tag 2 -->
+<div class="flex items-center gap-2 pl-2.5 pr-2 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed shadow-sm transition-all hover:bg-primary-fixed-dim">
+<span class="material-symbols-outlined text-[16px] text-primary">analytics</span>
+<span class="font-label-md text-label-md font-medium">Redis Streams (Lab Coursework)</span>
+<button class="w-4 h-4 rounded-full flex items-center justify-center hover:bg-black/10 transition-colors ml-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Skill Tag 3 -->
+<div class="flex items-center gap-2 pl-2.5 pr-2 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed shadow-sm transition-all hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[16px] text-secondary">deployed_code</span>
+<span class="font-label-md text-label-md font-medium">Docker &amp; Containerization (Foundational)</span>
+<button class="w-4 h-4 rounded-full flex items-center justify-center hover:bg-black/10 transition-colors ml-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Skill Tag 4 -->
+<div class="flex items-center gap-2 pl-2.5 pr-2 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed shadow-sm transition-all hover:bg-primary-fixed-dim">
+<span class="material-symbols-outlined text-[16px] text-primary">route</span>
+<span class="font-label-md text-label-md font-medium">Event-Driven Architecture (Target Skill)</span>
+<button class="w-4 h-4 rounded-full flex items-center justify-center hover:bg-black/10 transition-colors ml-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+<!-- Suggested Chips -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-2 pt-2">
+<span class="font-caption text-caption text-secondary whitespace-nowrap">Recommended complementary skills:</span>
+<div class="flex flex-wrap items-center gap-1.5">
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-caption text-caption transition-all" type="button">+ PostgreSQL</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-caption text-caption transition-all" type="button">+ Kafka</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-caption text-caption transition-all" type="button">+ Prometheus</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-caption text-caption transition-all" type="button">+ gRPC</button>
+</div>
+</div>
+</div>
+<!-- 4. Role Scope & Logistics Grid -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col gap-5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Scope &amp; Logistics</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+<!-- Difficulty Level -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Academic Difficulty</label>
+<div class="relative flex items-center">
+<select class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all appearance-none cursor-pointer">
+<option>Foundational (Year 1)</option>
+<option>Intermediate (Years 2-3)</option>
+<option selected="">Advanced (Final Year / Masters)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Duration / Time Commitment -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Time Commitment</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">schedule</span>
+<input class="w-full pl-10 pr-3 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all" id="oppDurationInput" type="text" value="5 Weeks (~12 hrs/week)"/>
+</div>
+</div>
+<!-- Spots Available -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Student Cohort Capacity</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">group_add</span>
+<input class="w-full pl-10 pr-3 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all" type="text" value="4 openings (2 pairs)"/>
+</div>
+</div>
+<!-- Application Deadline -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Application Deadline</label>
+<span class="font-caption text-caption text-primary font-medium">32 days left</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">event</span>
+<input class="w-full pl-10 pr-3 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all" type="text" value="May 15, 2025"/>
+</div>
+</div>
+<!-- Compensation / Stipend -->
+<div class="flex flex-col gap-1.5 sm:col-span-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Stipend or Compensation Benchmark</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">payments</span>
+<input class="w-full pl-10 pr-3 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all" id="oppStipendInput" type="text" value="£1,400 completion stipend (£32k pro-rata equivalent)"/>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Repeatable Deliverables & Responsibilities -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Key Deliverables &amp; Milestones</h2>
+<p class="font-caption text-caption text-secondary">Break down what students will produce or own during this sprint for supervisor evaluation.</p>
+</div>
+<span class="px-2 py-0.5 bg-surface-container text-secondary rounded font-caption text-caption">3 Defined</span>
+</div>
+<div class="flex flex-col gap-3" id="deliverablesContainer">
+<!-- Item 1 -->
+<div class="flex items-center gap-3 p-3.5 rounded-lg bg-surface-container-low group hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-outline cursor-grab hover:text-on-surface text-[20px]">drag_indicator</span>
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-caption text-caption font-semibold">1</div>
+<p class="flex-1 font-body-md text-body-md text-on-surface">
+              Architect and implement idempotent Go HTTP webhook delivery worker with exponential backoff.
+            </p>
+<button class="text-secondary hover:text-error transition-colors p-1" title="Remove deliverable" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-3 p-3.5 rounded-lg bg-surface-container-low group hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-outline cursor-grab hover:text-on-surface text-[20px]">drag_indicator</span>
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-caption text-caption font-semibold">2</div>
+<p class="flex-1 font-body-md text-body-md text-on-surface">
+              Integrate Redis Stream consumer groups with dead-letter queue management for failed payloads.
+            </p>
+<button class="text-secondary hover:text-error transition-colors p-1" title="Remove deliverable" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-3 p-3.5 rounded-lg bg-surface-container-low group hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-outline cursor-grab hover:text-on-surface text-[20px]">drag_indicator</span>
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-caption text-caption font-semibold">3</div>
+<p class="flex-1 font-body-md text-body-md text-on-surface">
+              Write comprehensive unit &amp; integration test suite achieving &gt;90% branch coverage with CI/CD.
+            </p>
+<button class="text-secondary hover:text-error transition-colors p-1" title="Remove deliverable" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Add Button -->
+<button class="w-full py-3 rounded-lg border-2 border-dashed border-secondary/20 hover:border-primary-container text-secondary hover:text-primary-container font-label-md text-label-md flex items-center justify-center gap-2 transition-all bg-surface-container-lowest hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Add another deliverable</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Live Student Marketplace Card Preview (4 Cols Sticky) -->
+<div class="lg:col-span-4 flex flex-col gap-6 lg:sticky lg:top-24">
+<!-- Card Label -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[18px]">preview</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Student Marketplace Preview</span>
+</div>
+<span class="font-caption text-caption text-secondary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          Live updating
+        </span>
+</div>
+<!-- Preview Card (Emulating student view) -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-md transition-all flex flex-col justify-between relative overflow-hidden">
+<!-- Accent Top Bar -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary-container via-primary to-tertiary"></div>
+<div>
+<!-- Company & Badge Row -->
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold shadow-sm">
+                M
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Monzo Engineering</span>
+<span class="font-caption text-caption text-secondary leading-tight" id="previewDept">Core Banking &amp; Ledger</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold whitespace-nowrap">
+              Project Sprint
+            </span>
+</div>
+<!-- Role Title -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug mb-2" id="previewTitle">
+            Event-Driven Webhook Dispatcher Sprint
+          </h3>
+<!-- Role Description snippet -->
+<p class="font-body-sm text-body-sm text-secondary line-clamp-2 mb-4" id="previewDesc">
+            Build and benchmark a high-throughput, idempotent event dispatcher in Go and Redis with mentor reviews.
+          </p>
+<!-- Key Meta Pills -->
+<div class="flex flex-wrap items-center gap-3 mb-5 py-2 px-3 rounded-lg bg-surface-container-low font-caption text-caption text-on-surface">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">schedule</span>
+<span id="previewDuration">5 Weeks</span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">payments</span>
+<span id="previewStipend">£1,400 stipend</span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+<span>Hybrid / London</span>
+</div>
+</div>
+<!-- Student Match Score Banner -->
+<div class="p-3 rounded-xl bg-tertiary-container/10 mb-5 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="relative w-8 h-8 flex items-center justify-center">
+<svg class="w-8 h-8 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-sm text-[10px] font-bold text-on-tertiary-fixed-variant">88%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-tertiary-fixed-variant leading-tight">High Target Fit</span>
+<span class="font-caption text-[11px] text-tertiary leading-tight">Matched to Alex M. (Year 3)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+<!-- Tags shown to students -->
+<div class="flex flex-wrap gap-1.5 mb-6">
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-caption text-caption text-on-surface-variant font-medium">Go</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-caption text-caption text-on-surface-variant font-medium">Redis Streams</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-caption text-caption text-on-surface-variant font-medium">Docker</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-caption text-caption text-on-surface-variant font-medium">+1 more</span>
+</div>
+</div>
+<!-- Student Action CTA in Preview -->
+<div>
+<button class="w-full py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md opacity-90 cursor-not-allowed flex items-center justify-center gap-2" disabled="" type="button">
+<span>Apply with Verified Profile</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Curriculum Calibration Intel Card -->
+<div class="p-5 rounded-xl bg-surface-container-low flex flex-col gap-3 shadow-sm">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span>Curriculum Alignment Intel</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+          Based on required competencies, this posting matches active syllabi at:
+        </p>
+<ul class="flex flex-col gap-2 font-caption text-caption text-on-surface">
+<li class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Imperial College London
+            </span>
+<span class="text-secondary font-medium">~42 Qualified</span>
+</li>
+<li class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              University College London (UCL)
+            </span>
+<span class="text-secondary font-medium">~38 Qualified</span>
+</li>
+<li class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Cambridge CS Tripos Part II
+            </span>
+<span class="text-secondary font-medium">~19 Qualified</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Bottom Floating / Fixed Action Bar -->
+<div class="w-full mt-12 pt-6 pb-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-secondary font-caption text-caption">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Draft auto-saved 2 mins ago</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant">Changes synchronized with NextTech Labs cloud</span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-secondary font-label-md text-label-md transition-all shadow-sm" type="button">
+        Save as draft
+      </button>
+<button class="px-4 py-2.5 rounded-lg bg-secondary-container text-on-secondary-fixed hover:bg-surface-container-high font-label-md text-label-md transition-all" type="button">
+        Preview as student
+      </button>
+<button class="px-6 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-md hover:bg-primary transition-all flex items-center gap-2" id="footerPublishBtn" type="button">
+<span>Publish opportunity</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive bindings to demonstrate live card synchronization
+  const titleInput = document.getElementById('oppTitleInput');
+  const previewTitle = document.getElementById('previewTitle');
+
+  const deptInput = document.getElementById('oppDeptInput');
+  const previewDept = document.getElementById('previewDept');
+
+  const descInput = document.getElementById('oppDescInput');
+  const previewDesc = document.getElementById('previewDesc');
+
+  const durationInput = document.getElementById('oppDurationInput');
+  const previewDuration = document.getElementById('previewDuration');
+
+  const stipendInput = document.getElementById('oppStipendInput');
+  const previewStipend = document.getElementById('previewStipend');
+
+  if (titleInput && previewTitle) {
+    titleInput.addEventListener('input', (e) => {
+      previewTitle.textContent = e.target.value.trim() || 'Untitled Opportunity';
+    });
+  }
+
+  if (deptInput && previewDept) {
+    deptInput.addEventListener('input', (e) => {
+      previewDept.textContent = e.target.value.trim() || 'Department Unassigned';
+    });
+  }
+
+  if (descInput && previewDesc) {
+    descInput.addEventListener('input', (e) => {
+      previewDesc.textContent = e.target.value.trim() || 'No description provided.';
+    });
+  }
+
+  if (durationInput && previewDuration) {
+    durationInput.addEventListener('input', (e) => {
+      previewDuration.textContent = e.target.value.trim() || 'Flexible';
+    });
+  }
+
+  if (stipendInput && previewStipend) {
+    stipendInput.addEventListener('input', (e) => {
+      const val = e.target.value.trim();
+      previewStipend.textContent = val.length > 15 ? val.slice(0, 15) + '...' : val || 'Uncompensated';
+    });
+  }
+</script></main></div></body></html>
