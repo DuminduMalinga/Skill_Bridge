@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+/*
+ * Shared design system, ported from the original per-page Tailwind CDN
+ * configs (Material Design 3-style tokens). This is the single source of
+ * truth for colors/spacing/typography across the whole app; it's based on
+ * the palette from the original landing page.
+ */
+@theme {
+  --color-on-background: #1a1c1c;
+  --color-primary-fixed-dim: #c3c0ff;
+  --color-inverse-on-surface: #f0f1f1;
+  --color-on-tertiary-fixed-variant: #005236;
+  --color-surface-container-low: #f3f3f3;
+  --color-on-error-container: #93000a;
+  --color-secondary-container: #dee2ef;
+  --color-on-tertiary-container: #67f4b7;
+  --color-surface-container-lowest: #ffffff;
+  --color-outline-variant: #c7c4d8;
+  --color-on-error: #ffffff;
+  --color-surface-variant: #e2e2e2;
+  --color-outline: #777587;
+  --color-on-surface-variant: #464555;
+  --color-surface-bright: #f9f9f9;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-surface-container: #eeeeee;
+  --color-on-primary-container: #dad7ff;
+  --color-inverse-surface: #2f3131;
+  --color-secondary: #5a5e69;
+  --color-tertiary-container: #006e4b;
+  --color-on-primary-fixed: #0f0069;
+  --color-inverse-primary: #c3c0ff;
+  --color-surface-dim: #dadada;
+  --color-primary-fixed: #e2dfff;
+  --color-on-secondary-fixed: #171c25;
+  --color-primary-container: #4f46e5;
+  --color-on-primary: #ffffff;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-error: #ba1a1a;
+  --color-surface-tint: #4d44e3;
+  --color-secondary-fixed: #dee2ef;
+  --color-on-surface: #1a1c1c;
+  --color-on-primary-fixed-variant: #3323cc;
+  --color-surface-container-highest: #e2e2e2;
+  --color-background: #f9f9f9;
+  --color-error-container: #ffdad6;
+  --color-surface: #f9f9f9;
+  --color-surface-container-high: #e8e8e8;
+  --color-on-tertiary-fixed: #002113;
+  --color-on-secondary-fixed-variant: #424751;
+  --color-secondary-fixed-dim: #c2c6d3;
+  --color-tertiary: #005338;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-on-secondary-container: #60646f;
+  --color-primary: #3525cd;
+
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-gutter-sm: 1rem;
+  --spacing-margin: 2rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-margin-sm: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-xl: 2.5rem;
+
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-display-hero: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-caption: "Inter", sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-display-hero-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+
+  --text-headline-lg: 30px;
+  --text-headline-lg--line-height: 38px;
+  --text-headline-lg--letter-spacing: -0.015em;
+  --text-headline-lg--font-weight: 700;
+
+  --text-body-sm: 13px;
+  --text-body-sm--line-height: 18px;
+  --text-body-sm--font-weight: 400;
+
+  --text-display-hero: 40px;
+  --text-display-hero--line-height: 48px;
+  --text-display-hero--letter-spacing: -0.02em;
+  --text-display-hero--font-weight: 700;
+
+  --text-body-md: 14px;
+  --text-body-md--line-height: 22px;
+  --text-body-md--font-weight: 400;
+
+  --text-caption: 12px;
+  --text-caption--line-height: 16px;
+  --text-caption--font-weight: 400;
+
+  --text-headline-sm: 18px;
+  --text-headline-sm--line-height: 26px;
+  --text-headline-sm--letter-spacing: -0.005em;
+  --text-headline-sm--font-weight: 600;
+
+  --text-label-md: 14px;
+  --text-label-md--line-height: 20px;
+  --text-label-md--font-weight: 500;
+
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 26px;
+  --text-body-lg--font-weight: 400;
+
+  --text-headline-md: 22px;
+  --text-headline-md--line-height: 30px;
+  --text-headline-md--letter-spacing: -0.01em;
+  --text-headline-md--font-weight: 600;
+
+  --text-display-hero-mobile: 32px;
+  --text-display-hero-mobile--line-height: 40px;
+  --text-display-hero-mobile--letter-spacing: -0.02em;
+  --text-display-hero-mobile--font-weight: 700;
+
+  --text-headline-lg-mobile: 24px;
+  --text-headline-lg-mobile--line-height: 32px;
+  --text-headline-lg-mobile--letter-spacing: -0.01em;
+  --text-headline-lg-mobile--font-weight: 700;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--letter-spacing: 0.02em;
+  --text-label-sm--font-weight: 600;
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

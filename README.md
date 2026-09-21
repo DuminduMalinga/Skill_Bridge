@@ -11,38 +11,50 @@ results.
 
 ## Tech
 
-Plain static HTML + [Tailwind CSS via CDN](https://tailwindcss.com). No
-build step, no package manager, no framework — every page is a self-contained
-`.html` file that loads Tailwind and Google Fonts from a CDN.
+A React + TypeScript single-page app, built with [Vite](https://vite.dev) and
+styled with [Tailwind CSS v4](https://tailwindcss.com) (compiled via
+`@tailwindcss/vite`, not the CDN build). Routing is client-side via
+[react-router-dom](https://reactrouter.com). One shared design system
+(`src/styles/index.css`) drives every screen; there is no per-page Tailwind
+config.
 
 ## Running it locally
 
-Just open a page in a browser:
-
-- Open `index.html` (redirects to `pages/landing.html`), or
-- Open `pages/landing.html` directly.
-
-Or serve the folder with any static file server, e.g.:
-
 ```bash
-npx serve .
-# or
-python -m http.server 8000
+npm install
+npm run dev
 ```
 
-Then visit `http://localhost:<port>/`.
+Then visit the URL Vite prints (defaults to `http://localhost:5173/`).
+
+Other scripts:
+
+```bash
+npm run build    # type-check (tsc -b) + production build into dist/
+npm run preview  # serve the dist/ build locally
+```
 
 ## Structure
 
-- `pages/` — the live site. Every page referenced by the prototype lives here.
+- `src/pages/` — one component per screen (e.g. `LandingPage.tsx`,
+  `DashboardPage.tsx`). Routed from `src/App.tsx`.
+- `src/layouts/` — shared chrome reused across groups of pages:
+  `MarketingLayout`-style pages render their own header/footer inline,
+  `AuthLayout` (login/signup/choose-path), `OnboardingLayout`
+  (onboarding steps 1-3), `DashboardLayout` (student app shell),
+  `AppShellLayout` + `CompanyLayout`/`InstituteLayout` (employer/institute
+  app shells).
+- `src/components/ui/` — small reusable pieces (e.g. `OnboardingProgress`).
+- `src/styles/index.css` — the single Tailwind theme (colors, spacing,
+  typography) used across the whole app.
 - `design-source/` — original Stitch AI design-tool exports, kept for
-  reference. These were the source material adapted into `pages/`; they are
-  not used by the live site.
-- `index.html` — redirects to `pages/landing.html`.
+  reference only; not used by the app.
 
 ## User flows
 
-- **Student**: `pages/landing.html` → `pages/choose-path.html` →
-  `pages/signup.html`
-- **Company**: `pages/landing.html` → `pages/choose-path.html` →
-  `pages/company-signup.html`
+- **Student**: `/` (landing) → `/choose-path` → `/signup` → `/onboarding-1`
+  → `/onboarding-2` → `/onboarding-3` → `/dashboard`
+- **Company**: `/` → `/choose-path` → `/company-signup` →
+  `/company-profile-setup` → `/company-dashboard`
+- **Institute**: `/` → `/choose-path` → `/institute-signup` →
+  `/institute-profile-setup` → `/institute-dashboard`
